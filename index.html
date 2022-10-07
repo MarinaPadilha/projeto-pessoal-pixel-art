@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Pixels Art</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <main>
+    <section>
+    <h1 id="title">Paleta de Cores</h1>
+    </section>
+    <section id="color-palette">
+      <div class= "color selected" id="black" onclick="setPenColor('corZero', 'black')"></div> 
+      <div class= "color" id="corUm" onclick="setPenColor('corUm', corUm)"></div>
+      <div class= "color" id="corDois" onclick="setPenColor('corDois', corDois)"></div>
+      <div class= "color" id="corTres" onclick="setPenColor('corTres', corTres)"></div>
+  </section>
+  <div id="tools">
+    <button id="clear-board" onclick="clearBtn()">Limpar</button>
+    <input type="number" id="board-size" min="1">
+    <button id="generate-board" onclick="createGrid()">VQV!</button>
+  </div>
+  <section id="pixel-board"></section>
+  </main>
+      
+  
+  <script src="script.js"></script>
+</body>
+</html>

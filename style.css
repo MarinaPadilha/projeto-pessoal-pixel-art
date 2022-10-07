@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-family: sans-serif;
+  background-image: url(https://wallpaperaccess.com/full/5457303.png);
+  background-size: cover;
+}
+#title {
+  font-style: oblique;
+  font-size: 45px;
+  margin-top: 35px;
+  text-align: center;
+}
+#color-palette {
+  grid-template-rows: repeat(4, 40px);
+  grid-template-columns: repeat(1, 40px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  gap: 10px;
+}
+#black {
+  background-color: black;
+  border: solid black 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 2px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+}
+#corUm {
+  background-color: var(--corUm);
+  border: solid black 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 2px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+}
+#corDois {
+  background-color: var(--corDois);
+  border: solid black 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 2px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+}
+#corTres {
+  background-color: var(--corTres);
+  border: solid black 1px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin: 2px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+}
+#pixel-board {
+  display: grid;
+  margin: 20px auto;
+  grid-template-rows: repeat(var(--inputSize), 1fr);
+  grid-template-columns: repeat(var(--inputSize), 1fr);
+  width: calc(40px * var(--inputSize));
+  justify-items: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.pixel {
+  background-color: white;
+  border: black solid 1px;
+  width: 40px;
+  height: 40px;
+  gap: 0;
+}
+#tools {
+  text-align: center;
+}
+#board-size {
+  width: 50px;
+}
+#clear-board {
+  background-color: white;
+  margin: 50px;
+  width: 65px;
+  border: solid black 1px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+#generate-board {
+  width: 45px;
+  cursor: pointer;
+}
